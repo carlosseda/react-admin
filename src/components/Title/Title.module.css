@@ -2,4 +2,5 @@ h1{
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
   margin: 0;
+  text-transform: capitalize;
 }

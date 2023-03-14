@@ -3,13 +3,13 @@ import { MenuContextProvider } from "../../context/MenuContext";
 import Menu from "../Menu";
 import Title from "../Title";
 import HamburgerButton from "../HamburgerButton";
-import styles from './Header.module.css';
+import './Header.module.css';
 
-export default function Header() {
+export default function Header({title}) {
 
   return (
     <header>
-      <Title />
+      <Title title={title} />
 
       <MenuContextProvider>
         <HamburgerButton />
