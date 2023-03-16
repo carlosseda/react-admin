@@ -1,11 +1,10 @@
-import { Outlet } from "react-router-dom";
-import { useParams } from 'react-router-dom';
-import Header from "../components/Header";
+import { Outlet, useParams } from 'react-router-dom'
 
-export default function Layout() {
+import Header from '../components/Header'
 
-  const { panel } = useParams();
-  const title = panel ? panel : 'Inicio';
+export default function Layout () {
+  const { panel } = useParams()
+  const title = panel || 'Inicio'
 
   return (
     <>
@@ -14,8 +13,7 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
-      
+
     </>
   )
 };
-

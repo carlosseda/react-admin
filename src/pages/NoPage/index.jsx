@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default function NoPage() {
+export default function NoPage () {
   return (
-    <div className="noPage">
+    <div className='noPage'>
       <h1>404</h1>
     </div>
-  );
+  )
 }
