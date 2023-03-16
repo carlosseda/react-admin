@@ -1,0 +1,9 @@
+.adminPanel{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.table, .form{
+  width: 50%;
+}

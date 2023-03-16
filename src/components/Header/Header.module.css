@@ -2,6 +2,6 @@ header{
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 10%;
-  width: 80%;
+  padding: 1rem 0;
+  width: 100%;
 }

@@ -1,4 +1,4 @@
-.tabs-container-menu{
+.tabsContainerMenu{
   background-color: hsl(100, 100%, 100%);
   display: flex;
   height: 2.5em;
@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.tabs-container-menu ul{
+.tabsContainerMenu ul{
   height: 2.5em;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.tabs-container-menu li{
+.tabsContainerMenu li{
   color: hsl(0, 0%, 50%);
   cursor: pointer;
   font-family: 'Roboto' , sans-serif;
@@ -23,29 +23,29 @@
   text-align: center;
 }
 
-.tabs-container-menu li.active,
-.tabs-container-menu li.active:hover{
+.tabsContainerMenu li.active,
+.tabsContainerMenu li.active:hover{
   background-color:hsl(207, 85%, 69%);
   color: white;
 }
 
-.tabs-container-buttons{
+.tabsContainerButtons{
   display: flex;
   padding: 0 0.5em;
 }
 
-.tabs-container-buttons svg{
+.tabsContainerButtons svg{
   cursor: pointer;
   height: 2.5rem;
   width: 2.5rem;
   fill: hsl(207, 85%, 69%);
 }
 
-.tabs-container-buttons svg:hover{
+.tabsContainerButtons svg:hover{
   fill: hsl(19, 100%, 50%);
 }
 
-.errors-container{
+.errorsContainer{
   background-color: hsl(0, 0%, 100%);
   display: none;
   flex-direction: column;
@@ -54,26 +54,26 @@
   padding: 1em;
 }
 
-.errors-container.active{
+.errorsContainer.active{
   display: flex;
 }
 
-.errors-container .error-container{
+.errorsContainer .errorContainer{
   width: 100%;
 }
 
-.errors-container .error-container span{
+.errorsContainer .errorContainer span{
   color: hsl(0, 0%, 50%);
   font-family: 'Roboto';
   font-size: 0.8em;
   font-weight: 600;
 }
 
-.tab-panel{
+.tabPanel{
   display: none;
 }
 
-.tab-panel.active{
+.tabPanel.active{
   display: block;
   padding: 2em 0;
 }
@@ -84,20 +84,20 @@
   gap: 2em;
 }
 
-.form-element{
+.formElement{
   margin-bottom: 1em;
   width: 100%;
 }
 
-.form-element-label{
+.formElementLabel{
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
   width: 100%;
 }
 
-.form-element-label label,
-.form-element-label span{
+.formElementLabel label,
+.formElementLabel span{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto' , sans-serif;
   font-weight: 600;
@@ -105,12 +105,12 @@
   transition: color 0.5s;
 }
 
-.form-element-label label.invalid{
+.formElementLabel label.invalid{
   color: hsl(351deg 88% 64%);
 }
 
-.form-element-label,
-.form-element-input{
+.formElementLabel,
+.formElementInput{
   width: 100%;
 }
 
@@ -124,9 +124,9 @@ input[type="submit"]{
   outline: inherit;
 }
 
-.form-element-input input, 
-.form-element-input textarea,
-.form-element-input select {
+.formElementInput input, 
+.formElementInput textarea,
+.formElementInput select {
   background-color:hsl(226deg 64% 66%);
   border: none;
   border-bottom: 0.1em solid  hsl(0, 0%, 100%);
@@ -138,69 +138,69 @@ input[type="submit"]{
   width: 100%;
 }
 
-.form-element-input input:focus,
-.form-element-input textarea:focus,
-.form-element-input select:focus{
+.formElementInput input:focus,
+.formElementInput textarea:focus,
+.formElementInput select:focus{
   outline: none;
   border-bottom: 0.1em solid hsl(207, 85%, 69%);
 }
 
-.form-element-input input.invalid,
-.form-element-input textarea.invalid{
+.formElementInput input.invalid,
+.formElementInput textarea.invalid{
   border-bottom: 0.1em solid hsl(0, 100%, 50%);
 }
 
-.form-element-input textarea{
+.formElementInput textarea{
   height: 10em;
 }
 
-.form-element-input .checkbox-container,
-.form-element-input .radio-container{
+.formElementInput .checkboxContainer,
+.formElementInput .radioContainer{
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.form-element-input .checkbox-container input,
-.form-element-input .radio-container input{
+.formElementInput .checkboxContainer input,
+.formElementInput .radioContainer input{
   width: 1em;
   height: 1em;
 }
 
-.form-element-input .checkbox-container label,
-.form-element-input .radio-container label{
+.formElementInput .checkboxContainer label,
+.formElementInput .radioContainer label{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto' , sans-serif;
   font-weight: 600;
   font-size: 1em;
 }
 
-.form-element-input .range-container{
+.formElementInput .rangeContainer{
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.form-element-input .range-container input{
+.formElementInput .rangeContainer input{
   width: 100%;
 }
 
-.form-element-input .range-container label{
+.formElementInput .rangeContainer label{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto' , sans-serif;
   font-weight: 600;
   font-size: 1em;
 }
 
-.form-element-input .range-container .range-value{
+.formElementInput .rangeContainer .rangeValue{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto' , sans-serif;
   font-weight: 600;
   font-size: 1em;
 }
 
-.form-element-input .range-container input[type="range"]{
-  -webkit-appearance: none;
+.formElementInput .rangeContainer input[type="range"]{
+  appearance: none;
   width: 100%;
   height: 0.5em;
   border-radius: 0.5em;
@@ -211,7 +211,7 @@ input[type="submit"]{
   transition: opacity .2s;
 }
 
-.form-element-input input[type="time"]::-webkit-calendar-picker-indicator,
-.form-element-input input[type="date"]::-webkit-calendar-picker-indicator{
+.formElementInput input[type="time"]::-webkit-calendar-picker-indicator,
+.formElementInput input[type="date"]::-webkit-calendar-picker-indicator{
   filter: invert(1);
 }

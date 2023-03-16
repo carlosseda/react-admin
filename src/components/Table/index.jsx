@@ -17,18 +17,6 @@ export default function Table() {
       } */}
 
       <div className={style.tableRow}>
-        <ul>
-          <li>
-            <span>Nombre</span>Carlos
-          </li>
-          <li>
-            <span>Email</span>llusnf@gmcil.com
-          </li>
-          <li>
-            <span>Nombre</span>Carlos
-          </li>
-        </ul>
-
         <div className={style.tableButtons}>
           <div className={`${style.tableButton} ${style.editButton}`}>
             <svg viewBox="0 0 24 24">
@@ -41,6 +29,17 @@ export default function Table() {
             </svg>
           </div>
         </div>
+        <ul>
+          <li>
+            <span>Nombre</span>Carlos
+          </li>
+          <li>
+            <span>Email</span>llusnf@gmcil.com
+          </li>
+          <li>
+            <span>Nombre</span>Carlos
+          </li>
+        </ul>
       </div>
     </div>
   );
