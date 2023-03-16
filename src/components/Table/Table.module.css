@@ -2,86 +2,86 @@
   width: 100%;
 }
 
-.table .table-row {
+.table .tableRow {
   background-color: hsl(226deg 64% 66%);
   box-shadow: 0 0 0.5em hsl(0deg 0% 0% / 0.5);
   margin-bottom: 1em;
 }
 
-.table-row ul {
+.tableRow ul {
+  list-style: none;
   margin: 0;
   padding: 0.5em; 
 }
 
-.table-row ul li{
+.tableRow ul li{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto', sans-serif;
-  list-style: none;
 }
 
-.table-row .table-data-header{
+.tableRow span{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-right: 0.5em;
 }
 
-.table-row .table-data-header::after {
+.tableRow span::after {
   content: ":";
   margin-left: 0.3em;
 }
 
-.table-row .table-buttons{
+.tableRow .tableButtons{
   background-color: hsl(207, 85%, 69%);
   display: flex;
   justify-content: right;
   gap: 0.5rem;
 }
 
-.table-row .table-buttons svg {
+.tableRow .tableButtons svg {
   cursor: pointer;
   height: 2em;
   width: 2em;
 }
 
-.table-row .table-buttons svg path {
+.tableRow .tableButtons svg path {
   fill: hsl(0, 0%, 100%);
 }
 
-.table-row .table-buttons svg:hover path {
+.tableRow .tableButtons svg:hover path {
   fill: hsl(19, 100%, 50%);
 }
 
-.table-pagination {
+.tablePagination {
   margin-top: 1em;
 }
 
-.table-pagination .table-pagination-info{
+.tablePagination .tablePaginationInfo{
   color: hsl(0, 0%, 100%);
   display: flex;
   font-family: 'Roboto', sans-serif;
   justify-content: space-between;
 }
 
-.table-pagination .table-pagination-buttons p{
+.tablePagination .tablePaginationButtons p{
   color: hsl(0, 0%, 100%);
   font-family: 'Roboto', sans-serif;
   margin: 1rem 0;
 }
 
-.table-pagination-info p{
+.tablePaginationInfo p{
   margin: 0;
 }
 
-.table-pagination .table-pagination-button{
+.tablePagination .tablePaginationButton{
   cursor: pointer;
   margin-right: 1em;
 }
 
-.table-pagination .table-pagination-button:hover{
+.tablePagination .tablePaginationButton:hover{
   color: hsl(19, 100%, 50%);
 }
 
-.table-pagination .table-pagination-button.inactive{
+.tablePagination .tablePaginationButton.inactive{
   color: hsl(0, 0%, 69%);
 }

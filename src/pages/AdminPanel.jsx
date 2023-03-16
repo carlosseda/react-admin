@@ -8,9 +8,13 @@ export default function AdminPanel() {
   const { panel } = useParams();
 
   return (
-    <div className="AdminPanel">
-      <Table />
-      <Form />
+    <div className="adminPanel">
+      <div className="table">
+        <Table />
+      </div>
+      <div className="form">
+        <Form />
+      </div>
     </div>
   );
 }

@@ -1,22 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import './Table.module.css';
+import style from './Table.module.css';
 
-export default  function Table() {
-
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch('/api')
-    .then(response => response.json())
-    .then(data => {
-      const {rows = []} = data;      
-      setData(rows)   
-    })  
-  }, []); 
-
+export default function Table() {
+  
   return (
-    <div className="table">
-      {
+    <div className={style.table}>
+      {/* {
         data.map((item, index) => {
           return (
             <div className='TableItem' key={index}>
@@ -25,14 +14,21 @@ export default  function Table() {
             </div>
           )
         })
-      }
-      <button onClick={
-          fetch('/api')
-          .then(res => res.json())
-          .then(data => setData(data))
-        }>
-          Fetch Data
-      </button>
+      } */}
+
+      <div className={style.tableRow}>
+        <ul>
+          <li>
+            <span>Nombre</span>Carlos
+          </li>
+          <li>
+            <span>Email</span>llusnf@gmcil.com
+          </li>
+          <li>
+            <span>Nombre</span>Carlos
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
