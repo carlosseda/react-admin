@@ -10,7 +10,11 @@ export default function Layout() {
   return (
     <>
       <Header title={title} />
-      <Outlet />
+
+      <main>
+        <Outlet />
+      </main>
+      
     </>
   )
 };
