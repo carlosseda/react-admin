@@ -1,0 +1,87 @@
+.table {
+  width: 100%;
+}
+
+.table .table-row {
+  background-color: hsl(226deg 64% 66%);
+  box-shadow: 0 0 0.5em hsl(0deg 0% 0% / 0.5);
+  margin-bottom: 1em;
+}
+
+.table-row ul {
+  margin: 0;
+  padding: 0.5em; 
+}
+
+.table-row ul li{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+.table-row .table-data-header{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+.table-row .table-data-header::after {
+  content: ":";
+  margin-left: 0.3em;
+}
+
+.table-row .table-buttons{
+  background-color: hsl(207, 85%, 69%);
+  display: flex;
+  justify-content: right;
+  gap: 0.5rem;
+}
+
+.table-row .table-buttons svg {
+  cursor: pointer;
+  height: 2em;
+  width: 2em;
+}
+
+.table-row .table-buttons svg path {
+  fill: hsl(0, 0%, 100%);
+}
+
+.table-row .table-buttons svg:hover path {
+  fill: hsl(19, 100%, 50%);
+}
+
+.table-pagination {
+  margin-top: 1em;
+}
+
+.table-pagination .table-pagination-info{
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+}
+
+.table-pagination .table-pagination-buttons p{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+}
+
+.table-pagination-info p{
+  margin: 0;
+}
+
+.table-pagination .table-pagination-button{
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.table-pagination .table-pagination-button:hover{
+  color: hsl(19, 100%, 50%);
+}
+
+.table-pagination .table-pagination-button.inactive{
+  color: hsl(0, 0%, 69%);
+}

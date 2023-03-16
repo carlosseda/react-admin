@@ -19,8 +19,8 @@ export default  function Table() {
       {
         data.map((item, index) => {
           return (
-            <div key={index}>
-              <h1>{item.name}</h1> 
+            <div className='TableItem' key={index}>
+              <h4>{item.name}</h4> 
               <p>{item.description}</p>
             </div>
           )
@@ -30,7 +30,7 @@ export default  function Table() {
           fetch('/api')
           .then(res => res.json())
           .then(data => setData(data))
-      }>
+        }>
           Fetch Data
       </button>
     </div>
