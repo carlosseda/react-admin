@@ -6,7 +6,7 @@ export default function Form () {
       <form autoComplete='off'>
 
         <div className={style.tabsContainerMenu}>
-          <div class={style.tabsContainerItems}>
+          <div className={style.tabsContainerItems}>
             <ul>
               <li className={style.active}>Contenido</li>
               <li>Imágenes</li>
@@ -22,10 +22,10 @@ export default function Form () {
             </div>
             <div className={style.storeButton}>
               <label>
-                <input type='submit' value='' />
+                <input type='submit' defaultValue='' />
                 <svg viewBox='0 0 24 24'>
                   <path d='M0 0h24v24H0z' fill='none' />
-                  <path class='crud__create-button-icon' d='M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z' />
+                  <path className='crud__create-button-icon' d='M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z' />
                 </svg>
               </label>
             </div>
@@ -39,7 +39,7 @@ export default function Form () {
             <div className={style.row}>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='name'>Nombre</label>
+                  <label htmlFor='name'>Nombre</label>
                 </div>
                 <div className={style.formElementInput}>
                   <input type='text' name='name' id='name' />
@@ -47,16 +47,16 @@ export default function Form () {
               </div>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='age'>Edad</label>
+                  <label htmlFor='age'>Edad</label>
                 </div>
                 <div className={style.formElementInput}>
                   <div className={style.checkboxContainer}>
                     <label>20</label>
-                    <input type='checkbox' name='age' id='age' value='20' />
+                    <input type='checkbox' name='age' id='age' defaultValue='20' />
                     <label>25</label>
-                    <input type='checkbox' name='age' id='age' value='25' />
+                    <input type='checkbox' name='age' id='age' defaultValue='25' />
                     <label>30</label>
-                    <input type='checkbox' name='age' id='age' value='30' />
+                    <input type='checkbox' name='age' id='age' defaultValue='30' />
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Form () {
             <div className={style.row}>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='price'>Precio</label>
+                  <label htmlFor='price'>Precio</label>
                 </div>
                 <div className={style.formElementInput}>
                   <input type='number' name='price' id='price' />
@@ -72,16 +72,16 @@ export default function Form () {
               </div>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='gender'>Género</label>
+                  <label htmlFor='gender'>Género</label>
                 </div>
                 <div className={style.formElementInput}>
                   <div className={style.radioContainer}>
                     <label>H</label>
-                    <input type='radio' name='gender' id='gender' value='H' />
+                    <input type='radio' name='gender' id='gender' defaultValue='H' />
                     <label>M</label>
-                    <input type='radio' name='gender' id='gender' value='M' />
+                    <input type='radio' name='gender' id='gender' defaultValue='M' />
                     <label>?</label>
-                    <input type='radio' name='gender' id='gender' value='?' />
+                    <input type='radio' name='gender' id='gender' defaultValue='?' />
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Form () {
             <div className={style.row}>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='password'>Contraseña</label>
+                  <label htmlFor='password'>Contraseña</label>
                 </div>
                 <div className={style.formElementInput}>
                   <input type='password' name='password' id='password' />
@@ -97,12 +97,12 @@ export default function Form () {
               </div>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='salary'>Salario</label>
+                  <label htmlFor='salary'>Salario</label>
                 </div>
                 <div className={style.formElementInput}>
                   <div className={style.rangeContainer}>
-                    <span className={style.rangeValue}>0</span>
-                    <input type='range' name='salary' id='salary' value='0' />
+                    <span className={style.rangedefaultValue}>0</span>
+                    <input type='range' name='salary' id='salary' defaultValue='0' />
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function Form () {
             <div className={style.row}>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='date'>Fecha</label>
+                  <label htmlFor='date'>Fecha</label>
                 </div>
                 <div className={style.formElementInput}>
                   <input type='date' name='date' id='date' />
@@ -118,7 +118,7 @@ export default function Form () {
               </div>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='time'>Hora</label>
+                  <label htmlFor='time'>Hora</label>
                 </div>
                 <div className={style.formElementInput}>
                   <input type='time' name='time' id='time' />
@@ -128,7 +128,7 @@ export default function Form () {
             <div className={style.row}>
               <div className={style.formElement}>
                 <div className={style.formElementLabel}>
-                  <label for='message'>Mensaje</label>
+                  <label htmlFor='message'>Mensaje</label>
                 </div>
                 <div className={style.formElementInput}>
                   <textarea name='message' id='message' />
